@@ -27,18 +27,18 @@ const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
 
-// to add make futureDate be ten days after current date everytime
+// to add make futureDate be ten days after current date every time (for showcase purposes)
 // **uncomment next line for showcase**
-/* let tempDate = new Date();
+let tempDate = new Date();
 let tempYear = tempDate.getFullYear();
 let tempMonth = tempDate.getMonth();
-let tempDay = tempDate.getDate(); */
+let tempDay = tempDate.getDate();
 
 // **comment next line for showcase**
-let futureDate = new Date(2020, 10, 27, 19, 00, 00);
+/* let futureDate = new Date(2020, 10, 27, 19, 00, 00); */
 
 // **uncomment next line for showcase**
-/* const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0); */
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = formatMinutes(futureDate.getMinutes());
